@@ -15,7 +15,7 @@ This guide provides step-by-step instructions for setting up a basic Terraform p
 💡 _Note: Your folder structure may differ from the example below._
 
 ```bash
-cd ~/Documents/<your-username>/Terraform/
+cd ~/Documents/TheoWAF/Class6.5/GCP/Terraform/<name-of-repo-that-you-cloned>/
 ```
 
 ## Step 2: Create a Google Cloud Storage Bucket
@@ -33,19 +33,37 @@ You’ll need a Service Account (SA) in Google Cloud for Terraform to authentica
 
 -   You can **create a new Service Account** with the following roles:
 
+    -   `Editor`
     -   `Artifact Registry Admin`
-    -   `Storage Admin`
+    -   `Storage Administrator`
 
 -   Alternatively, you can **use an existing Service Account** that already has these roles assigned.
 
+>> Only attempt this next step if you don't have a .json key, otherwise go to Step 4
 After creating or identifying the Service Account:
 
-1. **Generate a new JSON key** for the SA.
-2. **Move the downloaded key file** to your Terraform project directory:
+1. **Generate a new JSON key** for the SA and note the filename (e.g., `terraform-sa-key.json`).
 
-```bash
-mv ~/Downloads/<key-file>.json ~/Documents/username/Terraform/<name-of-repo>/
-```
+2. **Use basic terminal commands** to navigate and move the key file to your Terraform project directory:
+
+   - Check your current directory:
+     ```bash
+     pwd
+     ```
+
+   - List files in your Documents folder:
+     ```bash
+     ls ~/Documents
+     ```
+
+   - Navigate to your Terraform project directory:
+     ```bash
+     cd ~/Documents/TheoWAF/Class6.5/GCP/Terraform/<name-of-repo-that-you-cloned>/
+     ```
+
+Paste the file (once you're sure of the source and destination paths) by:
+
+   - repeating the above steps using basic terminal commands and paste it in the folder destination.
 
 💡 Replace <key-file> with your actual file name and <name-of-repo> with your repository name.
 
