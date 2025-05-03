@@ -33,7 +33,6 @@ You’ll need a Service Account (SA) in Google Cloud for Terraform to authentica
 
 -   You can **create a new Service Account** with the following roles:
 
-    -   `Editor`
     -   `Artifact Registry Admin`
     -   `Storage Admin`
 
