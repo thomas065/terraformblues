@@ -39,7 +39,7 @@ You’ll need a Service Account (SA) in Google Cloud for Terraform to authentica
 
 -   Alternatively, you can **use an existing Service Account** that already has these roles assigned.
 
->> Only attempt this next step if you don't have a .json key, otherwise go to Step 4
+> Only attempt this next step if you don't have a .json key, otherwise go to Step 4
 After creating or identifying the Service Account:
 
 1. **Generate a new JSON key** for the SA and note the filename (e.g., `terraform-sa-key.json`).
