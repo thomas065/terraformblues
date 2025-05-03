@@ -36,7 +36,6 @@ You’ll need a Service Account (SA) in Google Cloud for Terraform to authentica
     -   `Editor`
     -   `Artifact Registry Admin`
     -   `Storage Admin`
-    -   `Owner`
 
 -   Alternatively, you can **use an existing Service Account** that already has these roles assigned.
 
@@ -231,3 +230,14 @@ terraform apply
 > Can be run with the -auto-approve flag to skip the approval prompt and automatically apply the changes.
 
 💡 This basic workflow helps ensure that your Terraform configurations are valid and that changes are planned and applied safely.
+
+### 6. Teardown all VPCs if/when done
+
+To teardown and destroy your infrastructure, run:
+
+```bash
+terraform destroy
+```
+
+> This command:
+> Kills all instances of your VPC network and removes them from GCP.
