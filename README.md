@@ -40,30 +40,32 @@ You’ll need a Service Account (SA) in Google Cloud for Terraform to authentica
 -   Alternatively, you can **use an existing Service Account** that already has these roles assigned.
 
 > Only attempt this next step if you don't have a .json key, otherwise go to Step 4
-After creating or identifying the Service Account:
+> After creating or identifying the Service Account:
 
 1. **Generate a new JSON key** for the SA and note the filename (e.g., `terraform-sa-key.json`).
 
 2. **Use basic terminal commands** to navigate and move the key file to your Terraform project directory:
 
-   - Check your current directory:
-     ```bash
-     pwd
-     ```
+    - Check your current directory:
 
-   - List files in your Documents folder:
-     ```bash
-     ls ~/Documents
-     ```
+        ```bash
+        pwd
+        ```
 
-   - Navigate to your Terraform project directory:
-     ```bash
-     cd ~/Documents/TheoWAF/Class6.5/GCP/Terraform/<name-of-repo-that-you-cloned>/
-     ```
+    - List files in your Documents folder:
+
+        ```bash
+        ls ~/Documents
+        ```
+
+    - Navigate to your Terraform project directory:
+        ```bash
+        cd ~/Documents/TheoWAF/Class6.5/GCP/Terraform/<name-of-repo-that-you-cloned>/
+        ```
 
 Paste the file (once you're sure of the source and destination paths) by:
 
-   - repeating the above steps using basic terminal commands and paste it in the folder destination.
+-   repeating the above steps using basic terminal commands and paste it in the folder destination.
 
 💡 Replace <key-file> with your actual file name and <name-of-repo> with your repository name.
 
